@@ -7,7 +7,9 @@ function OnClickPosting() {
    return(
       <S.Wrapper>
          <Link to={`/Posting`}>
-            새 글 추가
+           <button >
+               새 글 추가
+           </button>
          </Link>
       </S.Wrapper>
    )
@@ -16,23 +18,27 @@ function OnClickPosting() {
 export default OnClickPosting
 
 const Wrapper = styled.div`
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: transparent;
-   border: none;
-   width: 2.5rem;
-   height: 2.5rem;
-   outline: none;
-   border-radius: 50%;
-   color: #212529;
-   cursor: pointer;
-   margin-right: 0.5rem;
+
+   & button{
+      height: 2rem;
+      width: 7rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      outline: none;
+      font-weight: bold;
+      word-break: keep-all;
+      background: #F8F9FA;
+      border: 1px solid #212529;
+      color: #212529;
+      transition: all 0.125s ease-in 0s;
+      cursor: pointer;
+      margin-right: 1.25rem;
+   }
 `
-const container = styled.div`
-   
-`
+
+
 const S = {
    Wrapper,
-   container,
 }

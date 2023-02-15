@@ -5,7 +5,7 @@ function PostingPage() {
    
    return(
       <S.Wrapper>
-         asdads
+         페이지
       </S.Wrapper>
    )
 }
